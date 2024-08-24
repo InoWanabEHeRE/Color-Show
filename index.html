@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Color Show</title>
+    <style>
+        header {
+            text-align: center;
+        }
+        article {
+            text-align: center;
+        }
+        p {
+            font-size: 15pt;
+        }
+        span {
+            color: red;
+            font-weight: bold;
+        }
+        button {
+            margin: auto;
+            height: 50px;
+            width: 100px;
+            background: linear-gradient(to right, red, yellow, green, blue, purple, red);
+        }
+        body {
+            background: linear-gradient(to bottom, #3F0D86, #2D91D1);
+            color: wheat;
+        }
+        html {
+            min-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Color Show</h1></header>
+    <article>
+        <p>
+            Color Show is an odd project programmed by Liam Davis because he was bored during school and thought a little color changing table element would be an interesting idea. Color Show has very, VERY intense flashing and spinning effects and is not reccomended for those with: <span>PHOTOSENSITIVE EPILEPSY, MOTION SICKNESS, or any other medical issue that could be affected by Color Show.</spam> You have been warned.
+        </p>
+    </article>
+    <button onclick="button()">Click to enter Color Show!</button>
+    <script>
+        function button() {
+            window.open('colorshow.html')
+        }
+    </script>
+</body>
+</html>
