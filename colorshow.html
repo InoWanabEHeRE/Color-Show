@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Boxes </title>
+<meta charset='utf-8'>
+<style>
+table{
+    width: 100vw;
+    height: 100vh;
+    border-spacing: 0;
+    border-collapse: collapse;
+} 
+td {
+ width: 5vw;
+ height: 5vh;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden; 
+}
+#move {
+    animation: animation 4ms infinite;
+}
+@keyframes animation {
+    0% {
+        transform: rotate(-360deg);
+    }
+    20%{
+      transform: rotate(360deg);
+      filter: brightness(88%);
+    }
+    40% {
+      transform: rotate(50deg);
+      filter: brightness(100%);
+    }
+    50% {
+      transform: rotate(180deg);
+      transform: scale(5);
+    }
+    100% {
+        transform: rotate(360deg);
+        transform: scale(1);
+    }
+}
+</style>
+<body class="color" id="body">
+   
+    <script>
+      function activate() {
+         let body = document.getElementById('body');
+         body.className = color;
+      }
+        var color = function getRandomColor() {
+        var letters = '0123456789abcdef'.split('');
+        var color = '#';
+        for (var i = 0; i < 6; i++ ) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+   
+    setInterval(function() { 
+        for(var foot=0;foot<document.getElementsByClassName("color").length;foot++){
+            document.getElementsByClassName("color")[foot].style.backgroundColor = color(); //() to execute the function!
+        }
+    }, 4);
+    
+    setInterval(function() { 
+         bgcolor = color;
+    }, 4);
+    
+    </script>
+<table id="move">
+   <tr>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+    </tr>
+    <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+     <tr>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+        <td class="color"></td>
+     </tr>
+        <tr>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+       <td class="color"></td>
+    </tr>
+</table>
+  </body>
+  </html>
